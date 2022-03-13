@@ -6,6 +6,11 @@ const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 
 btn.addEventListener("click", function () {
+  randomBodyColor();
+});
+randomBodyColor();
+
+function randomBodyColor() {
   document.body.style.backgroundColor = `rgba(${random(0, 255)}, ${random(
     0,
     255
@@ -14,4 +19,4 @@ btn.addEventListener("click", function () {
     0,
     255
   )})`;
-});
+}
